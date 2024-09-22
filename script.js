@@ -3,9 +3,11 @@ let fix = document.querySelector(".fix")
 window.addEventListener("scroll", () => {
     if (window.scrollY > 10) {
         fix.style.display = "flex" 
+        nav.classList.add("nav")
     }
     else{
-        fix.style.display = "none"
+        fix.style.display = "none"        
+        nav.classList.remove("nav")
     }
 
 })
