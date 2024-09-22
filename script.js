@@ -1,7 +1,8 @@
 let fix = document.querySelector(".fix")
+let nav = document.querySelector("nav")
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 10) {
+    if (window.scrollY > 1) {
         fix.style.display = "flex" 
         nav.classList.add("nav")
     }
